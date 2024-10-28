@@ -1,8 +1,7 @@
 import Task from "./Task";
-import tasks from "../data/tasks";
 
-const taskList = tasks.map((task) => <Task task={task} />);
+export default function Tasks({ tasks }) {
+  const taskList = tasks.map((task) => <Task task={task} key={task.id} />);
 
-export default function Tasks() {
   return <ul>{taskList}</ul>;
 }
