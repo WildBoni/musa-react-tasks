@@ -1,17 +1,17 @@
 let tasks = [
   {
     id: "1234",
-    testo: "studia React",
+    name: "studia React",
     isCompleted: true,
   },
   {
     id: "5678",
-    testo: "studia CSS",
+    name: "studia CSS",
     isCompleted: false,
   },
   {
     id: "9045",
-    testo: "porta fuori il quokka",
+    name: "porta fuori il quokka",
     isCompleted: true,
   },
 ];

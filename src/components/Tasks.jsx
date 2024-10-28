@@ -1,13 +1,8 @@
 import Task from "./Task";
 import tasks from "../data/tasks";
 
+const taskList = tasks.map((task) => <Task task={task} />);
+
 export default function Tasks() {
-  return (
-    <ul>
-      <Task text="studia React" check={true} />
-      <Task text="studia Javascript" check={false} />
-      <Task text="studia CSS" />
-      <Task text="porta a spasso il quokka" />
-    </ul>
-  );
+  return <ul>{taskList}</ul>;
 }
